@@ -1,0 +1,209 @@
+.feedback-button {
+    position: fixed;
+    right: 20px; /* Distance from the right edge */
+    bottom: 20px; /* Distance from the bottom edge */
+    background-color: #262727; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+}
+
+.feedback-button:hover {
+    background-color: #1d1d1d; /* Darker on hover */
+}
+
+.feedback-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 600px; /* Width of the modal */
+    max-height: 80vh; /* Maximum height for the modal */
+    overflow-y: auto; /* Enable vertical scrolling */
+    justify-content: flex-start;
+}
+
+.feedback-modal .form-content {
+    max-height: 300px; /* Set a max height for the content area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Optional: prevent content from touching the scrollbar */
+}
+
+/* Custom scrollbar for the modal content */
+.feedback-modal ::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.feedback-modal ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+.feedback-modal ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.feedback-modal ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovered */
+}
+
+.citiheader-logo {
+    width: 100%; /* Set to 100% for responsiveness */
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add space below */
+}
+
+.feedback-description {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.feedback-description p{
+    font-size: 10px;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+}
+.rate-us-stars {
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .rate-us-stars .star {
+    font-size: 35px;
+    color: #ddd; /* Default star color (unfilled) */
+    margin-right: 5px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .rate-us-stars .star.filled {
+    color: #FFD700; /* Gold color for filled stars */
+  }
+  
+
+
+  #ratetag{
+    font-size: 13px;
+  }
+
+  #yesbuttonp{
+    font-size: 12px;
+  }
+  
+  .yes-no-buttons {
+    margin: 15px 0;
+    display: flex;
+  }
+  
+  .yes-no-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #ddd;
+  }
+  
+  .yes-no-buttons .selected {
+    background-color: #28a745; /* Green background for selected button */
+    color: white;
+  }
+  
+  .yes-button:hover,
+  .no-button:hover {
+    background-color: #ccc; /* Hover effect for Yes/No buttons */
+  }
+  
+  .yes-button.selected {
+    background-color: #28a745; /* Selected Yes button color */
+  }
+  
+  .no-button.selected {
+    background-color: #dc3545; /* Selected No button color */
+  }
+
+  .feedback-category-select {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  #comment-p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+
+#additional-comments{
+    font-size: 12px;
+}
+
+/* Custom scrollbar for the textarea */
+textarea::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovered */
+}
+
+#btn{
+    background-color: #28a745; /* Submit button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 70px;
+   margin-left: 300px;
+}
+
+#btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+#comment-pp{
+    font-size: 10px;
+    text-align: center;
+}

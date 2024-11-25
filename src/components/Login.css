@@ -1,0 +1,144 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container styling */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7; /* Light background */
+    padding: 20px;
+    margin-top:30px ;
+    margin-bottom:30px ;
+    background-image: url('../components/Citibank-Symbol.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-logo {
+   margin-left: 60px;
+    
+}
+
+.login-logo img {
+    width: 50%; /* Set a smaller width (adjust as needed) */
+    max-width: 150px; /* Optional: Set a max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Heading styling */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Max width of the form */
+    background-color: white; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+}
+
+/* Input label styling */
+label {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Input field styling */
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Password visibility toggle */
+.toggle-password {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Toggle form text styling */
+.toggle-form {
+    margin-top: 15px;
+    cursor: pointer;
+    color: #007bff; /* Blue text */
+    text-decoration: underline; /* Underline the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
+.login-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login-icons li {
+    margin: 0 10px;
+    
+}
+
+.login-icons li a {
+    color: #2b15f0;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.login-icons li a:hover {
+    color: #969090;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem; /* Smaller heading on small screens */
+    }
+
+    form {
+        padding: 15px; /* Less padding on small screens */
+    }
+
+    input {
+        font-size: 0.9rem; /* Smaller input font size */
+    }
+
+    button {
+        font-size: 0.9rem; /* Smaller button font size */
+    }
+
+    .toggle-form {
+        font-size: 0.8rem; /* Smaller toggle text on small screens */
+    }
+}

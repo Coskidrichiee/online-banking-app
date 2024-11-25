@@ -1,0 +1,547 @@
+/* AboutUs.css */
+.about-us {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.slogan-section {
+    display: flex; /* Use flexbox to arrange items */
+    align-items: center; /* Center content vertically */
+    background-color: #07011d; /* Dark blue background color */
+    color: white; /* Change text color to white for better contrast */
+    padding: 20px; /* Add padding for inner spacing */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-bottom: 15px;
+    height: auto;
+    padding: 0px 0px;
+
+    
+}
+
+.slogan-content {
+    display: flex; /* Ensure content is arranged in a row */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Use full width */
+    justify-content: space-between;
+    padding: 0px 0px;
+    
+}
+
+.slogan-image {
+    width: 60%; /* Set a fixed width for the image */
+    height: 85vh; /* Maintain aspect ratio */
+    margin-left: 20px; /* Space between image and text */
+    border-radius: 10px;
+    
+    
+}
+
+.slogan-text {
+    font-size: 30px; /* Adjust the font size as needed */
+    color: #fff;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+/* Global Impact Section Styles */
+.global-impact {
+    position: relative; /* Positioning context for overlay */
+    background-color: white; /* Set background color to white */
+    padding: 20px; /* Add padding for inner spacing */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Prevent overflow from child elements */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for transform and shadow */
+}
+
+/* Add overlay effect */
+.global-impact::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Absolute positioning for overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white overlay */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease; /* Transition for overlay opacity */
+    z-index: 1; /* Position overlay above background */
+}
+
+/* Change overlay visibility on hover */
+.global-impact:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Styling for heading and paragraph */
+.global-impact h2 {
+    position: relative; /* Position relative to ensure text is above overlay */
+    z-index: 2; /* Ensure heading is above overlay */
+    color: rgb(59, 59, 59); /* Set the text color */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 50px; /* Optional: Add margin for spacing below the heading */
+    font-weight: 300;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.global-impact p {
+    position: relative; /* Position relative to ensure text is above overlay */
+    z-index: 2; /* Ensure paragraph is above overlay */
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.impact-numbers {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px; /* Add margin to separate from text */
+}
+
+.impact-item {
+    text-align: center; /* Center text within each item */
+    position: relative; /* For positioning the line */
+    z-index: 2; /* Ensure items are above overlay */
+    padding: 0 20px; /* Add padding to the sides for spacing */
+}
+
+/* Add vertical separator lines between items */
+.impact-item:not(:last-child)::after {
+    content: ""; /* Required for pseudo-element */
+    display: inline-block; /* Allow spacing */
+    width: 2px; /* Width of the vertical line */
+    height: 50vh; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the vertical line */
+    position: absolute; /* Absolute positioning */
+    right: -10px; /* Position it to the right of the item */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+
+.impact-item h3 {
+    font-size: 3rem; /* Increase font size for impact numbers */
+    color: #003366; /* Change color to match theme */
+}
+
+.impact-item #me{
+    color: rgba(0, 0, 255, 0.712);
+}
+
+.impact-item #we{
+    color: rgba(75, 4, 4, 0.712);
+}
+
+.impact-item #wee{
+    color: rgba(4, 75, 16, 0.712);
+}
+
+.impact-item p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.mission{
+    background-color:#07011d;
+    max-width: 700px;
+   margin-left: 300px;
+   border-radius: 20px;
+   margin-bottom: 50px;
+   margin-top: 50px;
+}
+
+.mission-image {
+    width: 100%;
+    max-width: 600px; /* Adjust as necessary */
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.mission p{
+    margin: 0 80px;
+    font-size: 14px; 
+    color: #fff;
+    line-height: 1.5;
+}
+
+.mission h2{ 
+    color: #fff;
+    text-align: left;
+    margin: 0 80px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.mission button{
+    text-align: left;
+    background-color: #07011d;
+    border: 1px solid white;
+    width: 110px;
+    margin: 0 80px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.mission button:hover{
+    background-color:rgba(0, 0, 255, 0.712);
+    transition: 0.2s ease-in-out;
+}
+
+#strategy-image {
+    position: relative; /* Required for transform to work */
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    transition: transform 0.3s; /* Smooth transition for transformations */
+    padding: 0px 0px;
+}
+#leadership-image{
+    position: relative; /* Required for transform to work */
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    transition: transform 0.3s; /* Smooth transition for transformations */
+    padding: 0px 0px;
+    
+}
+#heritage-image {
+    width: 100%; /* Fill the width of the parent */
+    height: 55vh; /* Set a specific height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block; /* Treat as a block element */
+    margin: 0; /* Remove any default margin */
+    transition: transform 0.3s; /* Smooth transition for transformations */
+    padding: 0px 0px;
+}
+
+#global-image {
+    width: 100%; /* Fill the width of the parent */
+    height: 55vh; /* Set a specific height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block; /* Treat as a block element */
+    margin: 0; /* Remove any default margin */
+    transition: transform 0.3s; /* Smooth transition for transformations */
+    padding: 0px 0px;
+}
+
+.bank-sections {
+    padding: 20px; 
+    background-color: rgb(247, 244, 244);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bank-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Adds space between items */
+    width: 100%;
+}
+
+.bank-container button{
+    text-align: left;
+    background-color: white;
+    border: 1px solid rgb(110, 101, 240);
+    width: 110px;
+    margin: 0 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(110, 101, 240);
+}
+
+.bank-container button:hover{
+    background-color: #07011d;
+}
+
+/* Common styles for the container holding the text */
+.text-container {
+   /* Required for absolute positioning of the pseudo-element */
+    overflow: hidden; /* Ensure no overflow */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+/* Pseudo-element for the background color effect */
+.text-container::before {
+    content: ''; /* Required to display the pseudo-element */
+    position: absolute; /* Position it absolutely within the container */
+    left: 0;
+    right: 0;
+    bottom: 0; /* Full height */
+    background-color: rgba(0, 0, 255, 0.712); /* Background color */
+    transform: translateY(100%); /* Start hidden below the container */
+    transition: transform 0.3s ease; /* Smooth transition for the background color */
+    z-index: 0; /* Place it behind the text */
+}
+
+/* Hover effect on the text container */
+.text-container:hover {
+    transform: translateY(-30px); /* Move up slightly on hover */
+    background-color: rgba(0, 0, 255, 0.712);
+    
+}
+
+/* Reveal the background color on hover */
+.text-container:hover::before {
+    transform: translateY(0); /* Bring it into view */
+    
+}
+
+.bank-container > div {
+    flex: 1 1 calc(35% - 20px); /* Two items per row with space */
+    max-width: calc(35% - 20px); /* Ensure no overflow */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures images are contained */
+    background-color: white; /* Optional background color for each item */
+    max-height: auto;
+    position: relative;
+    display: block;
+    height: auto;
+}
+
+
+
+.bank-container h2 {
+    color: black;
+    padding: auto;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+
+.bank-container p {
+    font-size: 0.9em; /* Slightly smaller text for paragraphs */
+    line-height: 1.8;
+}
+
+.bank-sections h1{
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 120px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .bank-container > div {
+        flex: 1 1 calc(100% - 20px); /* Stacks items in one column on small screens */
+        max-width: calc(100% - 20px);
+    }
+}
+/* General styles for the section */
+.business-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 30px; /* Padding around the section */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #007bff;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    height: 86vh;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+/* Styles for the content div */
+.content {
+    max-width: 500px; /* Limit max width for better readability */
+    margin-right: 19px; /* Space between content and image */
+    height: 20vh;
+    justify-content: space-between;
+   
+}
+
+/* Heading styles */
+.content h2 {
+    font-size: 2rem; /* Font size for heading */
+    margin-bottom: 10px; /* Space below heading */
+    color: #FFF; /* Dark color for contrast */
+    margin-left: 10px;
+}
+
+/* Paragraph styles */
+.content p {
+    font-size: 1rem; /* Font size for paragraph */
+    line-height: 1.8; /* Spacing for readability */
+    margin-bottom: 15px; /* Space below paragraph */
+    color: #fff; /* Medium gray color */
+    margin-left: 10px;
+}
+
+/* Button styles */
+.content button {
+    background-color: #007bff; /* Initial button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    border: 1px solid white;
+    width: 110px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* Button hover effect */
+.my-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Image container styles */
+.image-container {
+    flex: 1; /* Take up available space */
+    margin-top: 15px;   
+}
+
+/* Image styles */
+.business-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+    object-fit: cover; /* Cover the area without distortion */
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .business-section {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .content {
+        margin-right: 0; /* Reset margin for mobile view */
+        margin-bottom: 20px; /* Space below content for mobile view */
+    }
+}
+
+/* General styles for the section */
+.citi-session {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Center the entire section */
+    padding: 40px 20px; /* Padding around the section */
+    background-color: #007bff;/* Light background */
+    height: 65vh;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 0px 0px;
+    margin-top: 50px;
+    
+}
+
+/* Container that holds both image and text */
+.citicontainer {
+    display: flex; /* Flexbox layout for the container */
+    max-width: 1200px; /* Max width to contain the content */
+    width: 100%; /* Full width */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space between image and text */
+    padding: 0px 0px;
+    
+}
+
+/* Image container styles */
+.citiimage-container {
+    flex: 1; /* Image takes up equal space */
+    margin-right: 20px; /* Space between image and text */
+    margin-top: 30px;
+}
+
+.business-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+    object-fit: cover; /* Cover the area without distortion */
+    display: block;
+}
+
+/* Text container styles */
+.cititext-container {
+    flex: 1; /* Take up equal space */
+    max-width: 600px; /* Limit width of the text */
+}
+
+/* Heading styles */
+.cititext-container h2 {
+    font-size: 2rem; /* Font size for the heading */
+    color: #fff; /* Darker text color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Paragraph styles */
+/* Styling for the text container paragraph */
+.cititext-container p {
+    font-size: 1rem; /* Paragraph font size */
+    line-height: 1.5; /* Line height for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+    color: #fff; /* White text color for the paragraph */
+}
+
+/* Styling for the anchor tag within the paragraph */
+.cititext-container p a {
+    color: #fff; /* Light blue color for the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+/* Hover effect for the link */
+.cititext-container p a:hover {
+    color: #fff; /* Change link color on hover */
+    text-decoration: underline; /* Underline the link when hovered */
+}
+
+
+/* Icon container (for the arrow and hyphen) */
+.citiicon-container {
+    display: flex; /* Flexbox to align arrow and hyphen horizontally */
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Align items vertically */
+}
+
+.citiicon-container .arrow-down {
+    font-size: 2rem; /* Larger font size for the arrow */
+    color: #fff; /* Blue color for the arrow */
+    margin-right: 10px; /* Space between arrow and hyphen */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .citicontainer {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center the text on smaller screens */
+    }
+    
+    .citiimage-container {
+        margin-right: 0; /* Remove margin when stacked vertically */
+        margin-bottom: 20px; /* Space below the image */
+    }
+}
+
+
+
+

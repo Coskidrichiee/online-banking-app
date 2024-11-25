@@ -1,0 +1,165 @@
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(41, 40, 40);
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    color: #fff;
+    
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px 10px;
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+
+  .footer-section a{
+    color: #fff;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* New download and social media sections */
+  .footer-download-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  
+  .download-section a {
+    margin: 0 10px;
+  }
+  
+  .app-download-icon {
+    height: 40px; /* You can change this to a smaller size if needed */
+    max-height: 40px; /* Ensure it doesn't exceed this height */
+  }
+  
+  .social-section a {
+    margin: 0 10px;
+    color: #fff;
+    width: auto; /* Change to 'auto' so it only takes up space it needs */
+    font-size: 18px; /* Control the font size for FontAwesome icons */
+    display: inline-block; /* To apply the width correctly */
+    line-height: 1; /* Adjust line height to reduce spacing */
+  }
+  .social-section {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    margin-right: 50px;
+  }
+  
+  .social-section a {
+    margin: 0 10px; /* Adjust horizontal spacing between icons */
+    color: #fff; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    display: inline-flex; /* Allow better alignment */
+    align-items: center; /* Center icons vertically within the link */
+  }
+  
+  .social-section svg {
+    width: 24px; /* Control the size directly */
+    height: 24px; /* Maintain aspect ratio */
+  }
+
+  footer {
+    background-color: #222; /* Example background color for the footer */
+    color: #757373; /* Example text color for the footer */
+    padding: 20px; /* Add padding around the footer content */
+  }
+  
+  footer hr {
+    border: none; /* Remove default border */
+    height: 1px; /* Set the thickness */
+    background-color: #646060; /* Set color for the line */
+    margin: 20px 0; /* Add vertical spacing */
+    width: 100%; /* Ensure it spans the full width */
+  }
+
+  .footer-legal {
+    display: flex;
+    justify-content: space-between; /* Evenly spaces the items */
+    padding: 10px 0; /* Add some padding */
+    color: #fff; /* Text color */
+    gap: 50px;
+    margin-left: 40px;
+  }
+  .footer-legal h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  
+  .legal-item {
+    text-align: center; /* Center-align the text */
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  
+  .legal-item a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px;
+  }
+  
+  .legal-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  .footer-importance {
+    padding: 20px; /* Padding for spacing */
+    text-align: start; /* Center the text */
+    
+  }
+  
+  .footer-importance h5 {
+    margin: 0 0 10px; /* Margin for spacing */
+    color: #fff; /* Darker text color for the header */
+    margin-left: 16px;
+  }
+  
+  .footer-importance p {
+    margin: 0; /* Remove default margin */
+    color: #fff; /* Medium gray for paragraph text */
+    line-height: 1.5; /* Improve readability */
+    font-size: 12px;
+  }
+
+  .footer-small-image-section {
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+    margin: 20px 0; /* Adds space above and below the section */
+  }
+  
+  .small-image {
+    width: 50px; /* Adjust the width of the image */
+    height: auto; /* Keeps the aspect ratio */
+    margin-right: 15px; /* Adds space between the image and text */
+  }
+  
+  
+  
+  
+  
+  
+  

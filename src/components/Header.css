@@ -1,0 +1,144 @@
+div .header{
+    background-color: #cecacb;
+    border-radius: 8px 8px 0 0;
+}
+
+.header {
+    background-color: #f1f1f1; /* Light gray background for the header */
+    padding: 10px;
+    position: relative; /* Relative positioning for dropdown */
+}
+
+.header-content {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo/name and nav */
+}
+
+.logo {
+    height: 50px; /* Adjust logo size as needed */
+}
+
+.bank-name {
+    font-size: 1.5em; /* Larger font size for the bank name */
+    margin: 0 20px; /* Space around the bank name */
+}
+
+/* Navigation styles */
+.nav {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: center; /* Align links vertically center */
+}
+
+.nav-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Horizontal layout */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between links */
+    cursor: pointer; /* Change cursor to pointer for clickable items */
+    
+}
+
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #181717; /* Link color */
+    position: relative; /* Positioning for pseudo-elements */
+    padding: 5px 8px; /* Add padding to create space for background */
+    border-radius: 4px; /* Rounded corners for the background */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and color change */
+}
+
+.nav-links a:hover {
+    background-color: #e7f9ff; /* Light blue background on hover */
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Optional: Add a hover effect using a pseudo-element */
+.nav-links a::after {
+    content: ""; /* Empty content for the pseudo-element */
+    display: block; /* Make it a block element */
+    height: 2px; /* Height of the underline */
+    background-color: #0056b3; /* Color of the underline */
+    width: 100%; /* Full width of the link */
+    position: absolute; /* Positioning relative to the link */
+    bottom: -5px; /* Position it below the link */
+    left: 0; /* Align it to the left */
+    transform: scaleX(0); /* Initial scale for the effect */
+    transition: transform 0.3s ease; /* Smooth transition for the scale */
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+
+.username-logout {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    margin-left: 15px; /* Space between other links and the username */
+}
+
+.username {
+    margin-right: 10px; /* Space between username and logout button */
+    font-weight: bold; /* Optional: Make the username bold */
+    color: #333; /* Optional: Change color of the username */
+}
+
+.logout-link {
+    background: none; /* Remove default button styling */
+    border: none; /* Remove border */
+    color: red; /* Button color */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 1em; /* Font size for button */
+    transition: color 0.3s ease; /* Smooth transition for color */
+    width: 120px;
+}
+
+.logout-link:hover {
+    color: red; /* Darker color on hover */
+}
+
+
+/* Hamburger icon styles */
+.hamburger {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    font-size: 1.5em; /* Size of the hamburger icon */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* Hide nav by default on small screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Positioning dropdown */
+        top: 60px; /* Position below the header */
+        right: 0; /* Align to the right */
+        width: 100%; /* Full width for dropdown */
+        background-color: #f1f1f1; /* Same background as header */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for dropdown */
+        z-index: 1; /* Ensure dropdown is above other content */
+    }
+
+    .nav.open {
+        display: flex; /* Show nav when hamburger is open */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically in dropdown */
+        padding: 10px 0; /* Add padding */
+    }
+
+    .nav-links li {
+        margin: 5px 0; /* Vertical spacing between links */
+        text-align: center; /* Center align links */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+}

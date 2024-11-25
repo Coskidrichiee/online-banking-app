@@ -1,0 +1,387 @@
+/* General Layout */
+.account-summary-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background: linear-gradient(135deg, black, #0056b3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar - Login Time */
+.login-time {
+    margin-bottom: 20px; /* Adds space below the login time */
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.sidebar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.sidebar-btn:hover {
+    background-color: white;
+    color: #0052cc;
+}
+
+.sidebar-btn svg {
+    margin-right: 8px;
+}
+
+/* Add View Transactions Button */
+.sidebar .view-transactions-btn {
+    margin-top: auto;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.sidebar .view-transactions-btn:hover {
+    background-color: #218838;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: inherit; /* Use the parent's color */
+}
+
+.no-decoration:hover {
+    text-decoration: underline; /* Optional hover effect */
+}
+
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Align Financial Overview and Make Transfer & Add Deposit Buttons */
+.overview-and-transfer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.account-header {
+    text-align: left;
+    color: black;
+    font-size: 15px;
+}
+
+/* Style for Financial Overview Header (h1) */
+.account-header h1 {
+    position: relative; /* To position the line under the h1 */
+    display: inline-block; /* Ensures the line is only as wide as the text */
+    padding-bottom: 10px; /* Space between the text and the line */
+    margin-bottom: 10px; /* Add space after the heading */
+    text-align: center; /* Align text to the center */
+}
+
+/* Adding the line under the h1 */
+.account-header h1::after {
+    content: ''; /* Empty content to generate the line */
+    position: absolute;
+    bottom: 0; /* Position the line at the bottom of the h1 */
+    left: 0;
+    width: 100%; /* Line spans across the full width of the h1 */
+    height: 5px; /* Thickness of the line */
+    background: linear-gradient(to right, #007bff 50%, #000000 50%); /* Blue on left, Black on right */
+}
+/* Grouping buttons together */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: flex-end;
+}
+
+/* Style for Make Transfer Button */
+.make-transfer-btn {
+    font-size: 13px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.make-transfer-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for Add Deposit Button */
+.add-deposit-btn {
+    font-size: 13px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-deposit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Account Details Section */
+.account-details {
+    width: 100%;
+    background: linear-gradient(135deg, #fff, #0056b3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: black;
+    margin-right: 20px; /* Optional: Add some spacing between account details and bank card */
+}
+
+/* Styling each paragraph inside the account details */
+.account-details p {
+    margin: 15px 0; /* Add space between each paragraph */
+    padding: 10px; /* Add padding inside each paragraph */
+    border: 1px solid #ddd; /* Add a light border around each p tag */
+    border-radius: 5px; /* Optional: rounded corners for the border */
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-transform: uppercase;
+}
+
+.balance {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Bank Card Section */
+.bank-card-section {
+    width: 100%;
+    margin-top: 20px; 
+    background: linear-gradient(135deg, #fff, #0056b3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bank Card Container (Flex Layout) */
+.bank-card-container {
+    display: flex;             /* Flexbox container to arrange items side by side */
+    justify-content: space-between; /* Space out header and card */
+    align-items: flex-start;   /* Align items at the top */
+    width: 100%; 
+}
+
+/* Bank Card Header - Left-aligned */
+.bank-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensure both title and button align to the left */
+    margin-bottom: 20px;
+}
+
+.bank-card-header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 20px; /* Space between title and button */
+    width: 100%;
+    margin-top: 150px;
+}
+
+.apply-now-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    gap: 20px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.apply-now-btn:hover {
+    background-color: #218838;
+}
+
+/* Bank Card - Right-aligned */
+.bank-card {
+    background: linear-gradient(135deg, black, #0056b3);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 450px;
+    width: 100%;  /* Ensure it stays within the section */
+    margin-top: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.card-balance {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.iban-number {
+    font-size: 25px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.cardholder-name,
+.expiry-date {
+    font-size: 24px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.close-modal-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-modal-btn:hover {
+    background-color: #d43d3d;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .account-summary-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sidebar-btn {
+        flex: 1;
+        margin: 5px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .account-details,
+    .bank-card-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        flex-direction: column;
+    }
+
+    .account-header {
+        font-size: 1.5em;
+    }
+
+    .account-details p,
+    .bank-card p {
+        font-size: 14px;
+    }
+
+    .apply-now-btn,
+    .make-transfer-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

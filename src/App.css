@@ -1,0 +1,74 @@
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  bottom: 0;
+  background-image: url('../src/Citi-scaled.jpg');
+  background-size: cover; /* Ensure background image covers the container */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.header .nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header .nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.account-summary {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.account-details {
+  font-size: 1.2em;
+}
+
+.main {
+  padding: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+  .header{
+    padding: 10px 5px; /* Adjust padding for smaller screens */
+  }
+
+  .header .nav-links li {
+    display: block; /* Stack navigation links vertically */
+    margin: 5px 0; /* Space between links */
+  }
+
+  .account-summary {
+    padding: 15px; /* Adjust padding for smaller screens */
+    margin: 15px 0; /* Reduce margin for smaller screens */
+  }
+
+  .account-details {
+    font-size: 1em; /* Reduce font size for better readability */
+  }
+
+  .main {
+    padding: 10px; /* Adjust padding in main content area */
+  }
+}
+
+
