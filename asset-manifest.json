@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/online-banking-app/static/css/main.2b6d86c6.css",
+    "main.js": "/online-banking-app/static/js/main.fc30f9b5.js",
+    "static/media/Citibank-Symbol.png": "/online-banking-app/static/media/Citibank-Symbol.9e2d3b10576f7e679c05.png",
+    "static/media/Citi-scaled.jpg": "/online-banking-app/static/media/Citi-scaled.3d5e1315ca24eaa1c81a.jpg",
+    "static/media/apple-store.svg": "/online-banking-app/static/media/apple-store.8c4986ee4828b47d16f5cd694ef065f2.svg",
+    "index.html": "/online-banking-app/index.html",
+    "main.2b6d86c6.css.map": "/online-banking-app/static/css/main.2b6d86c6.css.map",
+    "main.fc30f9b5.js.map": "/online-banking-app/static/js/main.fc30f9b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b6d86c6.css",
+    "static/js/main.fc30f9b5.js"
+  ]
+}
